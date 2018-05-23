@@ -1,0 +1,194 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.79);
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.backImg {
+    height: 110vh;
+    width: 65vw;
+    left: 300px;
+    top: 80px;
+    position: fixed;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.grid {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 3fr 6fr 1fr;
+    grid-column-gap: 12px;
+}
+
+.logo {
+    height: 130px;
+    width: 125px;
+    grid-area: 1/ 2/ 2/ 4;
+    margin-top: 50px;
+    margin-left: -15px;
+}
+
+.head {
+    grid-area: 1/ 4/ 2/ span 11;
+    color: rgb(164, 204, 120);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.head h1 {
+    font-size: 60px;
+    margin-top: 55px;
+    margin-bottom: 4px;
+    letter-spacing: 4px;
+    margin-left: -83px;
+}
+
+.head h2 {
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 4px;
+    margin-left: -83px;
+}
+
+.main {
+    grid-area: 2/ 2/ 4/ span 7;
+    width: 600px;
+}
+
+.text2 p {
+    font-size: 19px;
+    margin-top: 5px;
+    line-height: 23px;
+    color: rgb(164, 204, 120);
+    font-family: 'Crimson Text', serif;
+    text-align: justify;
+}
+
+.text2 img {
+    height: 23px;
+    width: 78px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: -4px;
+}
+
+.text2 {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    grid-area: 3/ 2/ 4/ span 15;
+    color: rgb(88, 99, 86);
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 90px;
+    font-size: 22px;
+}
+
+.footer a {
+    color: rgb(88, 99, 86);
+}
+
+button {
+    background-color: rgb(88, 99, 86);
+    color: white;
+    font-weight: bold;
+    width: 130px;
+    height: 50px;
+    font-size: 25px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.79);
+    border: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+}
+
+.inCube {
+    height: 30px;
+    width: 150px;
+    grid-area: 2/ 12/ 3/ span 5;
+    align-self: center;
+    justify-self: center;
+    color: black;
+}
+
+#cnv {
+    grid-area: 2/ 12/ 3/ span 5;
+    height: 600px;
+    width: 600px;
+    margin-top: -50px;
+}
+
+.register {
+    grid-area: 2/ 10/ 3/ span 2;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logout {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/ 16/ 2/ span 1;
+    background-color: rgb(88, 99, 86);
+    color: white;
+    font-weight: bold;
+    width: 130px;
+    height: 40px;
+    font-size: 25px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.79);
+    border: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+
+.register p {
+    font-size: 25px;
+    color: rgb(164, 204, 120);
+    font-family: 'Crimson Text', serif;
+}
+
+.register a {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/ 16/ 2/ span 1;
+    background-color: rgb(88, 99, 86);
+    color: white;
+    font-weight: bold;
+    width: 130px;
+    height: 40px;
+    font-size: 25px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.79);
+    border: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.line {
+    grid-area: 2/ 9/ 3/ span 1;
+    width: 3px;
+    height: 500px;
+    background-color: rgb(88, 99, 86);
+}

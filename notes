@@ -1,0 +1,58 @@
+{{#error}}
+<div class="error">error message</div>
+{{/error}}
+<form method="POST">
+<input name="first">
+<input name="second">
+<input name="sig" type="hidden">
+<canvas></canvas>
+</form>
+
+canvas.toDataURL() // gives you the image data from the canvas
+
+CREATE TABLE signatures (
+id SERIAL PRIMARY KEY,
+first VARCHAR(300) NOT NULL,
+last VARCHAR(300) NOT NULL,
+signature TEXT NOT NULL
+)
+
+RETURNING id will give you back the id of the user
+JSON.stringify({ id: 1}) + mySecret
+
+const cookieSession = require('cookie-session');
+
+app.use(cookieSession({
+    secret: 'a really hard to guess secret',
+    maxAge: 1000 * 60 * 60 * 24 * 14
+}));
+
+
+
+if (req.session.signatureId) {
+return res.redirect('/thankyou')
+}
+
+req.session.signatureId
+
+app.get('/petition', (req,res)=>{
+if(req.session.signatureId){
+return res.redirect('/thankyou')
+}
+res.render('petition')
+})
+
+app.get('/thankyou', (req,res)=>{
+if(!req.session.signatureId){
+return res.redirect('/petition')
+}
+db.makeafunction(req.session.signatureId).then((result)=>{
+res.render('thankyou')
+})
+})
+
+
+app.get('/logout', (req,res)=>{
+req.session = null;
+res.redirect('/');
+})

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>nergy petition</title>
+</head>
+
+<body>
+    <img src="logo.png" class="backImg">
+    <div class="grid">
+        <img src="logo.png" class="logo">
+        <div class="head">
+            <h1>Welcome back !!</h1>
+            <h2>Log in to view the progress of the nergy initiative</h2>
+        </div>
+        <div class="login">
+          <a href="/register" class="">SIGN UP</a>
+        </div>
+       <canvas id="cnv" width="800" height="700"></canvas>
+       <div class="box">
+
+        <div class="form">
+
+            <form method="POST">
+              <div class="err">
+                  <h3>{{err}}</h3>
+              </div>
+              <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <input name="email" class="email" placeholder="*Email Address">
+                <input name="password" class="password" type="password" placeholder="*Password">
+                <div id="submit">
+                  <button type="submit" class="button">LOG IN</button>
+                </div>
+                <p>*Mandatory fields</p>
+          </form>
+            <!-- <div id="Mandatory">
+            </div> -->
+        </div>
+ </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

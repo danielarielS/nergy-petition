@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="edit.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>nergy petition</title>
+</head>
+
+<body>
+    <img src="logo.png" class="backImg">
+    <div class="grid">
+        <img src="logo.png" class="logo">
+        <div class="head">
+            <h1>Your Profile !!</h1>
+            <h2>Go ahead and update your details</h2>
+        </div>
+        <canvas id="cnv" width="800" height="700"></canvas>
+        <div class="logout">
+          <a href="/logout" id="logout">LOG OUT</a>
+        </div>
+        <div class="form">
+
+            {{#name}}
+            <form method="POST">
+
+              <div class="">
+                <label for="first">First Name</label>
+                <input name="first" id="first"  value="{{first}}">
+              </div>
+
+              <div class="">
+                <label for="last">Last Name</label>
+                <input name="last" id="last" value="{{last}}">
+              </div>
+            <div class="">
+              <label for="email">E-mail</label>
+              <input name="email" id="email" value="{{email}}">
+            </div>
+              <div class="">
+                <label for="home">Homepage</label>
+                <input name="home" id="home" value="{{url}}">
+              </div>
+                <div class="">
+                  <label for="age">Age</label>
+                  <input name="age" id="age" value="{{age}}">
+                </div>
+                <div class="">
+                  <label for="city">City</label>
+                  <input name="city" id="city" value="{{city}}">
+                </div>
+                <div class="">
+                  <input name="password" id="password" type="password" placeholder="*Password">
+                </div>
+
+                <div id="submit">
+                  <button type="submit" class="button">UPDATE</button>
+                </div>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+          </form>
+          {{/name}}
+
+        </div>
+
+    </div>
+
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

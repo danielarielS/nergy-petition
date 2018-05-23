@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>nergy petition</title>
+</head>
+
+<body>
+    <img src="logo.png" class="backImg">
+    <div class="grid">
+        <img src="logo.png" class="logo">
+        <div class="head">
+            <h1>Sign now !!</h1>
+            <h2>And support the nergy initiative</h2>
+        </div>
+        <div class="login">
+          <a href="/login" class="">LOG IN</a>
+        </div>
+<canvas id="cnv" width="800" height="700"></canvas>
+<div class="box">
+
+  <!-- <div class="err">
+  </div> -->
+
+        <div class="form">
+<h3 class="err">{{err}}</h3>
+            <form method="POST">
+
+              <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <input name="first" class="first" placeholder="*First name">
+                <input name="last" class="last" placeholder="*Last name">
+                <input name="email" class="email" placeholder="*Email Address">
+                <input name="password" class="password" type="password" placeholder="*Password">
+                <div id="Mandatory">
+                    <p>*Mandatory fields</p>
+                </div>
+                <div id="submit">
+                  <button type="submit" class="button">SIGN UP</button>
+                </div>
+
+          </form>
+
+        </div>
+</div>
+
+    </div>
+
+   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

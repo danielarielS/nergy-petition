@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="public/petition.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>nergy petition</title>
+</head>
+
+<body>
+    <img src="./public/logo.png" class="backImg">
+    <div class="grid">
+        <img src="./public/logo.png" class="logo">
+        <div class="head">
+            <h1>Sign now !!</h1>
+            <h2>And support the nergy initiative</h2>
+        </div>
+        <div class="count">
+            <h1>8888</h1>
+            <h2>signatures to go</h2>
+        </div>
+        <div class="main">
+            <div class="text1">
+                <p>By signing this petition you will be getting us closer to our goal of lunching this amazing product, which off course you will be given the first opportunity to purchase at below market prices. </p>
+            </div>
+            <video width="600" height="340" controls>
+              <source src="./public/nergy1.mp4" type="video/mp4">
+              </video>
+            <div class="text2">
+                <img src="./public/logo2.png">
+                <p>A Tel-Aviv based StartUp entering the green energy sector, with planned presence in 32 countries worldwide in only two years time. The company specialises in cutting-edge long lasting, self replenishing bike battery. The way it works is,
+                    you cycle to work, school or just for fun and actually produce your own electricity, which is then stored in our battery, so when you get home just plug it in, enjoy free power and even more important help lower our worlds dependency
+                    on non-replenishing power sources.</p>
+            </div>
+        </div>
+        <!-- <div class="line"></div> -->
+        <div class="form">
+            <div class="err">
+                <h3>{{err}}</h3>
+            </div>
+            <form method="POST">
+                <input name="first" class="first" placeholder="*First name">
+                <input name="last" class="last" placeholder="*Last name">
+                <input name="sig" type="hidden" class="sig">
+                <div class="sign">
+                    <p id="sig">*Your signature please</p>
+                </div>
+                <canvas class="canvas" height="170" width="300"></canvas>
+            </form>
+            <div id="button">
+                <button type="submit" class="button">Submit</button>
+                <button class="remove">Remove</button>
+            </div>
+            <div id="Mandatory">
+                <p>*Mandatory fields</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>*Find out more about the man behind <a href="http://reutneuman.com/">NERGY</a></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

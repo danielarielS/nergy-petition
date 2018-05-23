@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>nergy petition</title>
+</head>
+
+<body>
+    <img src="logo.png" class="backImg">
+    <div class="grid">
+        <img src="logo.png" class="logo">
+        <div class="head">
+            <h1>Sign now !!</h1>
+            <h2>And support the nergy initiative</h2>
+        </div>
+<canvas id="cnv" width="800" height="700"></canvas>
+<div class="logout">
+  <a href="/logout" id="logout">LOG OUT</a>
+</div>
+<div class="box">
+
+
+        <div class="form">
+
+            <form method="POST">
+              <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <input name="age" class="age" placeholder="Age">
+                <input name="city" class="city" placeholder="City">
+                <input name="home" class="home" placeholder="Homepage">
+                <div id="submit">
+                  <button type="submit" class="button">CONTINUE</button>
+                </div>
+          </form>
+
+        </div>
+</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

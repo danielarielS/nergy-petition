@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="petition.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>nergy petition</title>
+</head>
+
+<body>
+    <img src="logo.png" class="backImg">
+    <div class="grid">
+        <img src="logo.png" class="logo">
+        <div class="head">
+            <h1>Sign now !!</h1>
+            <h2>And support the nergy initiative</h2>
+        </div>
+        <div class="count">
+            <p>{{count}}</p>
+            <h2>signatures to go</h2>
+        </div>
+        <div class="logout">
+          <a href="/logout" id="logout">LOG OUT</a>
+        </div>
+            <div class="text1">
+                <p>By signing this petition you will be getting us closer to our goal of launching this amazing product, which of course you will be given the first opportunity to purchase at below market prices. </p>
+            </div>
+
+
+        <div class="line"></div>
+        <div class="form">
+
+            <form method="POST">
+              <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <input name="sig" type="hidden" class="sig">
+                <div class="sign">
+                    <p>{{first}}</p>
+                    <p>{{last}}</p>
+                </div>
+                <div class="err">
+                    <h3>{{err}}</h3>
+                </div>
+                <canvas class="canvas" height="200" width="500"></canvas>
+                <div id="submit">
+                  <button type="submit" class="button">Submit</button>
+                </div>
+          </form>
+          <button class="remove">Clear</button>
+          <!-- <div id="button">
+
+          </div> -->
+            <!-- <div id="Mandatory">
+                <p>*Mandatory fields</p>
+            </div> -->
+        </div>
+        <div class="footer">
+            <p>*Find out more about the man behind <a href="http://reutneuman.com/">NERGY</a></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

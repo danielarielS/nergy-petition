@@ -1,0 +1,299 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.79);
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.backImg {
+    height: 110vh;
+    width: 65vw;
+    left: 300px;
+    top: 80px;
+    position: fixed;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.grid {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 3fr 6fr 1fr;
+    grid-column-gap: 12px;
+}
+
+.inCube {
+    height: 30px;
+    width: 150px;
+    grid-area: 2/ 4/ 3/ span 3;
+    align-self: center;
+    color: black;
+}
+
+#cnv {
+    grid-area: 1/ 14/ 2/ span 2;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.logo {
+    height: 130px;
+    width: 125px;
+    grid-area: 1/ 2/ 2/ 4;
+    margin-top: 50px;
+    margin-left: -15px;
+}
+
+.head {
+    grid-area: 1/ 4/ 2/ span 10;
+    color: rgb(164, 204, 120);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.head h1 {
+    font-size: 60px;
+    margin-top: 55px;
+    margin-bottom: 4px;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+
+.head h2 {
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+
+.count {
+    grid-area: 1/ 12/ 2/ span 5;
+    background-color: rgb(164, 204, 120);
+    color: rgb(88, 99, 86);
+    height: 250px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.count p {
+    font-size: 93px;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    padding: 0px;
+}
+
+.count h2 {
+    font-size: 30px;
+    /* margin-bottom: 100px; */
+    margin-top: -20px;
+}
+
+.main {
+    grid-area: 2/ 2/ 4/ span 7;
+    width: 600px;
+}
+
+.text1 p {
+    color: rgb(164, 204, 120);
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 23px;
+    /* word-wrap: break-word; */
+    text-align: justify;
+}
+
+.text1 {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.text2 p {
+    font-size: 19px;
+    margin-top: 5px;
+    line-height: 23px;
+    color: rgb(164, 204, 120);
+    font-family: 'Crimson Text', serif;
+    /* word-wrap: break-word; */
+    text-align: justify;
+}
+
+.text2 img {
+    height: 23px;
+    width: 78px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: -4px;
+}
+
+video {}
+
+.text2 {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line {
+    grid-area: 2/ 10/ 3/ span 1;
+    width: 3px;
+    height: 500px;
+    background-color: rgb(88, 99, 86);
+}
+
+.box {
+    grid-area: 2/ 1/ 3/ span 16;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.form {
+    width: 1000px;
+    height: 600px;
+    border: 5px solid rgb(88, 99, 86);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    /* width: 300px; */
+    /* height: 460px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.form input {
+    background-color: rgb(164, 204, 120);
+    color: rgba(255, 255, 255, 0.8);
+    width: 298px;
+    height: 50px;
+    border: 0px;
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    text-indent: 10px;
+}
+
+.sign {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 300px;
+}
+
+#sig {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.form canvas {
+    background-color: rgb(164, 204, 120);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form p {
+    color: white;
+    font-family: 'Crimson Text', serif;
+}
+
+.footer {
+    grid-area: 3/ 2/ 4/ span 15;
+    color: rgb(88, 99, 86);
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 90px;
+    font-size: 22px;
+}
+
+.footer a {
+    color: rgb(88, 99, 86);
+}
+
+#button {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    margin-top: -50px;
+}
+
+#Mandatory {
+    width: 300px;
+}
+
+#submit {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: rgb(88, 99, 86);
+    color: white;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.79);
+    border: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+}
+
+.err {
+    color: rgb(217, 0, 0);
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.err h3 {
+    font-size: 16px;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+}
+
+.login {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/ 16/ 2/ span 1;
+    background-color: rgb(88, 99, 86);
+    color: white;
+    font-weight: bold;
+    width: 110px;
+    height: 40px;
+    font-size: 25px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.79);
+    border: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}

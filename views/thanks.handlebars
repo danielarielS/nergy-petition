@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="thanks.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>nergy petition</title>
+</head>
+
+<body>
+    <img src="logo.png" class="backImg">
+    <div class="grid">
+        <img src="logo.png" class="logo">
+        <div class="head">
+            <h1>Thank you !!! </h1>
+            <h2>With your trust we will make nergy a reality.</h2>
+        </div>
+        <canvas id="cnv" width="800" height="700"></canvas>
+        <div class="logout">
+          <a href="/logout" id="logout">LOG OUT</a>
+        </div>
+        <div class="image">
+          <div class="sig">
+            <a href="/signed">See all {{count}} signers</a>
+          </div>
+          <img height="500" width="500" src="{{sig}}">
+        </div>
+
+    <form action="/delete" method="POST">
+      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button type="submit" class="button">DELETE MY SIGNATURE</button>
+    </form>
+<div class="edit">
+  <a href="/edit">EDIT YOUR PROFILE</a>
+</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

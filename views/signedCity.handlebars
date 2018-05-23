@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/../signed.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>nergy petition</title>
+</head>
+
+<body>
+
+    <img src="/../logo.png" class="backImg">
+    <div class="grid">
+        <img src="/../logo.png" class="logo">
+        <div class="head">
+            <h1>Here you GO</h1>
+            <h2>These are the names of all our backers.</h2>
+        </div>
+
+        <div class="names">
+          {{#name}}
+          <div><h4><a href="/user/{{url}}">{{first}} {{last}}</a>  ({{age}})  <a href="/signed/{{city}}">{{city}}</a></h4></div>
+          {{/name}}
+        </div>
+        <canvas id="cnv" width="800" height="700"></canvas>
+        <div class="logout">
+          <a href="/logout" id="logout">LOG OUT</a>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.79);
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.backImg {
+    height: 110vh;
+    width: 65vw;
+    left: 300px;
+    top: 80px;
+    position: fixed;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.grid {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 3fr 6fr 1fr;
+    grid-column-gap: 12px;
+}
+
+.logo {
+    height: 130px;
+    width: 125px;
+    grid-area: 1/ 2/ 2/ 4;
+    margin-top: 50px;
+    margin-left: -15px;
+}
+
+.head {
+    /* height: 100px; */
+    grid-area: 1/ 4/ 2/ span 10;
+    color: rgb(164, 204, 120);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.head h1 {
+    font-size: 60px;
+    margin-top: 55px;
+    margin-bottom: 4px;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+
+.head h2 {
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+
+form {
+    /* width: 300px;
+    height: 460px; */
+    grid-area: 2/ 14/ 3/ span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+button {
+    background-color: rgb(88, 99, 86);
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.79);
+    border: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    margin-top: 70px;
+}
+
+.edit {
+    grid-area: 2/ 2/ 3/ span 2;
+    width: 200px;
+    height: 200px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.79);
+    border: 0px;
+    background-color: rgb(88, 99, 86);
+    border-radius: 40px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    font-weight: bold;
+}
+
+.edit a {
+    color: white;
+    font-size: 25px;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.logout {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/ 16/ 2/ span 1;
+    background-color: rgb(88, 99, 86);
+    color: white;
+    font-weight: bold;
+    width: 130px;
+    height: 40px;
+    font-size: 25px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.79);
+    border: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+
+/* .inCube {
+    height: 30px;
+    width: 150px;
+    grid-area: 2/ 4/ 3/ span 3;
+    align-self: center;
+    color: black;
+} */
+
+#cnv {
+    grid-area: 1/ 14/ 2/ span 2;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.image {
+    grid-area: 2/ 7/ 3/ span 4;
+    /* height: 300px; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image img {
+    border: 5px solid rgb(88, 99, 86);
+    border-radius: 40px;
+}
+
+.sig a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}

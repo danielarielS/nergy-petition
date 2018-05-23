@@ -1,0 +1,44 @@
+LEFT JOIN -- gives me all the data from the from the FROM
+RIGHT JOIN --
+FULL JOIN --
+
+SELECT first, last, email, password, users.id, signatures.id AS signid
+FROM users
+LEFT JOIN signatures
+ON signatures.user_id = users.id
+WHERE email = $1;
+
+
+app.get('/profile')
+app.post('/profile')
+
+DROP TABLE IF EXISTS user_profiles;
+
+CREATE TABLE user_profiles(
+id SERIAL PRIMARY KEY,
+age INTEGER,
+city VARCHAR(250),
+url VARCHAR(250),
+user_id INTEGER REFERENCES users(id)
+);
+
+app.get('/signers/:name')
+req.params
+
+WHERE LOWER(city) = LOWER($1)
+
+
+"<img onerror=alert('PWNED') src=0>
+
+document.cookie
+
+httpOnly: true // add this to cookieSession
+
+res.setHeader('X-Frame-Options', 'DENY')
+remmber to hash the password before insert
+
+"INSERT INTO user_profiles (age, city, url) VALUES ($1, $2, $3) ON CONFLICT (user_id) DO UPDATE SET age=$1, city=$2, url=$3", [age, city, url]
+
+<form action="/delete" method="POST">
+<button> </button>
+</form>
